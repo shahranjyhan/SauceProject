@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37287" started-at="2023-01-10T22:40:46Z" finished-at="2023-01-10T22:41:24Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="37287" started-at="2023-01-10T22:40:46Z" finished-at="2023-01-10T22:41:24Z">
+      <class name="com.RunnerSauce.Runnerz">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="setUpClass" is-config="true" duration-ms="500" started-at="2023-01-10T22:40:46Z" finished-at="2023-01-10T22:40:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2975a9e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="7068" started-at="2023-01-10T22:40:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User enters invalid Username and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User tries to login with invalid credentials"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="6207" started-at="2023-01-10T22:40:54Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:41:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User enters invalid Username and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User tries to login with invalid credentials"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="8377" started-at="2023-01-10T22:41:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:41:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User enters invalid Username and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User tries to login with invalid credentials"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="11488" started-at="2023-01-10T22:41:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User enters invalid Username and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User tries to login with invalid credentials"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="tearDownClass" is-config="true" duration-ms="3582" started-at="2023-01-10T22:41:20Z" finished-at="2023-01-10T22:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.RunnerSauce.Runnerz -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
