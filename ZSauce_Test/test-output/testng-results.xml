@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37287" started-at="2023-01-10T22:40:46Z" finished-at="2023-01-10T22:41:24Z">
+  <suite name="Default suite" duration-ms="49215" started-at="2023-01-11T02:43:26Z" finished-at="2023-01-11T02:44:15Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="37287" started-at="2023-01-10T22:40:46Z" finished-at="2023-01-10T22:41:24Z">
+    <test name="Default test" duration-ms="49215" started-at="2023-01-11T02:43:26Z" finished-at="2023-01-11T02:44:15Z">
       <class name="com.RunnerSauce.Runnerz">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="setUpClass" is-config="true" duration-ms="500" started-at="2023-01-10T22:40:46Z" finished-at="2023-01-10T22:40:47Z">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="setUpClass" is-config="true" duration-ms="733" started-at="2023-01-11T02:43:26Z" finished-at="2023-01-11T02:43:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2975a9e]]>
+                <![CDATA[org.testng.TestRunner@4527f70a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="7068" started-at="2023-01-10T22:40:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:40:54Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="15220" started-at="2023-01-11T02:43:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-11T02:43:42Z">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,27 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Username and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Username and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.StepDefSauce.NegStep.user_should_see_an_error_message(NegStep.java:49)
+at ✽.User should see an error message(file:///Users/shahranjyhan/git/repository4/ZSauce_Test/Features/Negz.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="6207" started-at="2023-01-10T22:40:54Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:41:00Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="8479" started-at="2023-01-11T02:43:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-11T02:43:50Z">
           <params>
             <param index="0">
               <value>
@@ -50,10 +67,27 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Username and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Username and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.StepDefSauce.NegStep.user_should_see_an_error_message(NegStep.java:49)
+at ✽.User should see an error message(file:///Users/shahranjyhan/git/repository4/ZSauce_Test/Features/Negz.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="8377" started-at="2023-01-10T22:41:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:41:09Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="10000" started-at="2023-01-11T02:43:50Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-11T02:44:00Z">
           <params>
             <param index="0">
               <value>
@@ -66,10 +100,27 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Username and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Username and password do not match any user in this service] but found [Epic sadface: Username and password do not match any user in this service]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.StepDefSauce.NegStep.user_should_see_an_error_message(NegStep.java:49)
+at ✽.User should see an error message(file:///Users/shahranjyhan/git/repository4/ZSauce_Test/Features/Negz.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="11488" started-at="2023-01-10T22:41:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T22:41:20Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="runScenario" duration-ms="10499" started-at="2023-01-11T02:44:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-11T02:44:11Z">
           <params>
             <param index="0">
               <value>
@@ -82,10 +133,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test = 'error']"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Shahrans-MacBook-Air.local', ip: 'fe80:0:0:0:463:6b31:7397:674%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/nr/z69k59m953g...}, goog:chromeOptions: {debuggerAddress: localhost:51820}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a431b03eb717b34b816d746a858b0801
+*** Element info: {Using=xpath, value=//*[@data-test = 'error']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test = 'error']"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Shahrans-MacBook-Air.local', ip: 'fe80:0:0:0:463:6b31:7397:674%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/nr/z69k59m953g...}, goog:chromeOptions: {debuggerAddress: localhost:51820}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a431b03eb717b34b816d746a858b0801
+*** Element info: {Using=xpath, value=//*[@data-test = 'error']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.StepDefSauce.NegStep.user_should_see_an_error_message(NegStep.java:47)
+at ✽.User should see an error message(file:///Users/shahranjyhan/git/repository4/ZSauce_Test/Features/Negz.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="tearDownClass" is-config="true" duration-ms="3582" started-at="2023-01-10T22:41:20Z" finished-at="2023-01-10T22:41:24Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.RunnerSauce.Runnerz@32910148]" name="tearDownClass" is-config="true" duration-ms="4202" started-at="2023-01-11T02:44:11Z" finished-at="2023-01-11T02:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

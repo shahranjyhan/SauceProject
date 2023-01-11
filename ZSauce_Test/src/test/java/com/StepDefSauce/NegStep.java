@@ -2,12 +2,16 @@ package com.StepDefSauce;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.BaseC_Sauce.BaseSauce;
 import com.PageF.Elementz;
+import com.Utilities_Sauce.Utilitiez;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+
+
 
 public class NegStep extends BaseSauce {
 	
@@ -19,10 +23,11 @@ public class NegStep extends BaseSauce {
 
 	}
 
-	@Given("user enters Wrong <username> and <password>")
-	public void user_enters_wrong_username_and_password() {
-		pf.getUsername().sendKeys("Username");
-		pf.getPassword().sendKeys("Password");
+	@Given("user enters Wrong {string} and {string}")
+	public void user_enters_wrong_and(String username, String password) {
+	
+		pf.getUsername().sendKeys(username);
+		pf.getPassword().sendKeys(password);
 
 
 	}
@@ -36,9 +41,17 @@ public class NegStep extends BaseSauce {
 	}
 
 	@Then("User should see an error message")
-	public void user_should_see_an_error_message() {
+	public void user_should_see_an_error_message() throws InterruptedException {
+		Thread.sleep(2000);
+		String Expected =  "Username and password do not match any user in this service";
+		String Actual = driver.findElement(By.xpath("//*[@data-test = 'error']")).getText();
 		
-		pf.getError().getText();
+		Assert.assertEquals(Actual, Expected);
+		
+		System.out.println("Title");
+		
+		
+		
 
 
 	}

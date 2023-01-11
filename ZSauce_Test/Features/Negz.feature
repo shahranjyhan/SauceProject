@@ -7,7 +7,7 @@ Feature: User tries to login with invalid credentials
     And User should see an error message
 
     Examples: 
-      | Username       | Password     |
+      | username       | password     |
       | standarduser   | secret_sauce |
       | standard_user1 | secret_sauce |
       | standard_user  | secret_auce  |
